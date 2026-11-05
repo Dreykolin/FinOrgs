@@ -1,0 +1,30 @@
+# Dependencias
+node_modules/
+
+# Build y artefactos
+dist/
+build/
+*.tsbuildinfo
+
+# Tests
+coverage/
+
+# Variables de entorno: nunca se suben. Solo .env.example.
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editores y SO
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Herramientas locales
+.graphify/
