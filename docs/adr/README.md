@@ -15,3 +15,4 @@ Reglas:
 | [0004](0004-minio-almacenamiento-compatible-s3.md) | MinIO como almacenamiento compatible con S3 | Aceptada |
 | [0005](0005-sin-dependencia-de-nube.md) | Sin dependencia de servicios de nube en el núcleo | Aceptada |
 | [0006](0006-oauth2-google-y-sesion-en-servidor.md) | Login con Google (OAuth2) y sesión en el servidor | Aceptada |
+| [0007](0007-codigo-en-ingles-documentacion-en-espanol.md) | Código en inglés, documentación en español | Aceptada |
