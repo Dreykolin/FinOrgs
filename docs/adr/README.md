@@ -16,3 +16,4 @@ Reglas:
 | [0005](0005-sin-dependencia-de-nube.md) | Sin dependencia de servicios de nube en el núcleo | Aceptada |
 | [0006](0006-oauth2-google-y-sesion-en-servidor.md) | Login con Google (OAuth2) y sesión en el servidor | Aceptada |
 | [0007](0007-codigo-en-ingles-documentacion-en-espanol.md) | Código en inglés, documentación en español | Aceptada |
+| [0008](0008-saldo-aprobado-y-disponible-calculados.md) | Saldo, aprobado y disponible se calculan; aprobar no baja el saldo | Aceptada |
