@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" version="24.0.0">
+  <diagram id="ciclo" name="Ciclo de una solicitud">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="620" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="ini" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="345" y="20" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bor" value="&lt;b&gt;Borrador&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;solicitante prepara&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="280" y="90" width="160" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="env" value="&lt;b&gt;Enviada&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;en la bandeja del tesorero&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="280" y="230" width="160" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="obs" value="&lt;b&gt;Observada&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;vuelve con comentarios&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="20" y="230" width="160" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="apr" value="&lt;b&gt;Aprobada&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;compromete el monto&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="540" y="230" width="160" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="rec" value="&lt;b&gt;Rechazada&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;estado final&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="280" y="380" width="160" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="pag" value="&lt;b&gt;Pagada&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;genera el asiento contable&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="540" y="380" width="160" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="fin" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="475" y="500" width="30" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t0" value="crear" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;labelBackgroundColor=#ffffff;fontSize=11;" edge="1" parent="1" source="ini" target="bor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="enviar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;labelBackgroundColor=#ffffff;fontSize=11;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bor" target="env">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="retirar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;labelBackgroundColor=#ffffff;fontSize=11;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="env" target="bor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" value="observar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;labelBackgroundColor=#ffffff;fontSize=11;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="env" target="obs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t4" value="enviar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;labelBackgroundColor=#ffffff;fontSize=11;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="obs" target="env">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t5" value="aprobar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;labelBackgroundColor=#ffffff;fontSize=11;" edge="1" parent="1" source="env" target="apr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6" value="rechazar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;labelBackgroundColor=#ffffff;fontSize=11;" edge="1" parent="1" source="env" target="rec">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t7" value="pagar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;labelBackgroundColor=#ffffff;fontSize=11;" edge="1" parent="1" source="apr" target="pag">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="rec" target="fin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="pag" target="fin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="reglas" value="&lt;b&gt;Invariantes&lt;/b&gt;&lt;br&gt;• Solo se edita en Borrador u Observada. Una solicitud Enviada no se toca: primero se retira.&lt;br&gt;• Cada edición sube la versión. Aprobar exige la versión que el tesorero vio; si no coincide, 409.&lt;br&gt;• Aprobar: el aprobador no puede ser el solicitante, y debe haber disponible ≥ monto.&lt;br&gt;• Cada transición queda en eventos_solicitud (solo inserciones)." style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=12;fillColor=#fffbe6;strokeColor=#d6b656;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="740" y="90" width="230" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="abiertas" value="&lt;b&gt;Preguntas abiertas&lt;/b&gt;&lt;br&gt;• Aprobada que nunca se paga: ¿estado Anulada?&lt;br&gt;• Rendición de anticipos: ¿sub-estado o entidad propia?&lt;br&gt;• Borrador descartado: ¿se borra o queda como Descartada?" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=12;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="740" y="350" width="230" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
