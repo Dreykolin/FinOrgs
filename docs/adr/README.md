@@ -13,3 +13,4 @@ Reglas:
 | [0002](0002-dominio-hexagonal-con-mvc.md) | Dominio hexagonal aislado de NestJS, con MVC como capa externa | Aceptada |
 | [0003](0003-montos-bigint-y-ledger-doble-entrada.md) | Montos en bigint y ledger de doble entrada | Aceptada |
 | [0004](0004-minio-almacenamiento-compatible-s3.md) | MinIO como almacenamiento compatible con S3 | Aceptada |
+| [0005](0005-sin-dependencia-de-nube.md) | Sin dependencia de servicios de nube en el núcleo | Aceptada |
