@@ -10,3 +10,4 @@ Reglas:
 | # | Decisión | Estado |
 |---|---|---|
 | [0001](0001-monolito-modular.md) | Monolito modular en vez de microservicios | Aceptada |
+| [0002](0002-dominio-hexagonal-con-mvc.md) | Dominio hexagonal aislado de NestJS, con MVC como capa externa | Aceptada |
